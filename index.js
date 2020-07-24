@@ -1,14 +1,17 @@
+
+require("dotenv").config()
+
 const express = require("express");
 const { PORT } = require("./constants");
-const app = express();
-
 const bodyParserMiddleWare = express.json();
+const pricesRouter= require("./routers/prices")
+
+const app = express();
 app.use(bodyParserMiddleWare);
 
 
 
 
-const pricesRouter= require("./routers/prices")
 app.use("/films", pricesRouter)
 // console.log('prices', pricesRouter)
 
