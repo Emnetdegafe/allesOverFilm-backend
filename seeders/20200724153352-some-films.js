@@ -21,6 +21,7 @@ module.exports = {
           genre: ["Drama", "War"],
           createdAt: new Date(),
           updatedAt: new Date(),
+          mediumId: 4,
         },
         {
           title: "FAST & FURIOUS 6",
@@ -41,6 +42,7 @@ module.exports = {
           genre: ["Action", "Thriller", "Adventure"],
           createdAt: new Date(),
           updatedAt: new Date(),
+          mediumId: 4,
         },
         {
           title: "HUNTERS",
@@ -58,6 +60,7 @@ module.exports = {
           genre: ["Crime", "Drama", "Mystery"],
           createdAt: new Date(),
           updatedAt: new Date(),
+          mediumId: 1,
         },
         {
           title: "Joker",
@@ -76,6 +79,7 @@ module.exports = {
           genre: ["Drama","Thriller"],
           createdAt: new Date(),
           updatedAt: new Date(),
+          mediumId: 3,
         },
         {
           title: "Freud",
@@ -93,6 +97,7 @@ module.exports = {
           genre: ["Crime", "Thriller", "Television"],
           createdAt: new Date(),
           updatedAt: new Date(),
+          mediumId: 1,
         },
         {
           title: "MATRIX REVOLUTIONS",
@@ -110,6 +115,7 @@ module.exports = {
           genre: [ "Action", "Sci-Fi"],
           createdAt: new Date(),
           updatedAt: new Date(),
+          mediumId: 2,
         },
         {
           title: "ROCKET MAN",
@@ -126,6 +132,7 @@ module.exports = {
           genre: ["Biography","Musical", "Drama"],
           createdAt: new Date(),
           updatedAt: new Date(),
+          mediumId: 4,
         },
         {
           title: "AVENGERS: INFINITY WAR",
@@ -145,6 +152,7 @@ module.exports = {
           genre: ["Action", "Adventure", "Sci-Fi", "Super hero"],
           createdAt: new Date(),
           updatedAt: new Date(),
+          mediumId: 3,
         },
         {
           title: "HIDDEN FIGURES",
@@ -162,6 +170,7 @@ module.exports = {
           genre: ["Biography", "History", "Drama"],
           createdAt: new Date(),
           updatedAt: new Date(),
+          mediumId: 3,
         },
         {
           title: "TWO POPES",
@@ -179,6 +188,7 @@ module.exports = {
           genre: ["Biography", "Drama"],
           createdAt: new Date(),
           updatedAt: new Date(),
+          mediumId: 1,
 
         },
       ],
