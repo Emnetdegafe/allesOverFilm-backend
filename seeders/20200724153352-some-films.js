@@ -21,7 +21,8 @@ module.exports = {
           genre: ["Drama", "War"],
           createdAt: new Date(),
           updatedAt: new Date(),
-          mediumId: 4,
+          mediumId: 5,
+          eau: 8713045250492,
         },
         {
           title: "FAST & FURIOUS 6",
@@ -43,6 +44,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 4,
+          eau: 5053083106911,
         },
         {
           title: "HUNTERS",
@@ -61,11 +63,12 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 1,
+          eau: 222
         },
         {
           title: "Joker",
           image:
-            "https://allesoverfilm.nl/media/temp/files/2019-10-04-04-07/166/joker%20poster.jpg",
+            "https://allesoverfilm.nl/media/temp/files/2020-02-05-09-57/140/Joker%20UHD.jpg",
           director: "Todd Phillips",
           actors: [
             "Bill Camp",
@@ -76,28 +79,34 @@ module.exports = {
             "Zazie Beetz",
           ],
           year: 2020,
-          genre: ["Drama","Thriller"],
+          genre: ["Drama", "Thriller"],
           createdAt: new Date(),
           updatedAt: new Date(),
-          mediumId: 3,
+          mediumId: 4,
+          eau: 5051888249970
         },
         {
-          title: "Freud",
+          title: "GAME OF THRONES - SEIZOEN 8",
           image:
             "https://allesoverfilm.nl/media/temp/files/2020-04-27-00-03/136/Freud_netflix_poster.jpg",
-          director: "Marvin Kren",
+          director: "Different directors",
           actors: [
-            "Robert Finster",
-            "Brigitte Kren",
-            "Ella Rumpf",
-            "Georg Friedrich",
-            "Anja Kling",
+            "Carice van Houten",
+            "Emilia Clarke",
+            "Gwendoline Christie",
+            "Isaac Hempstead Wright",
+            "Jacob Anderson",
+            "John Bradley",
+            "Kit Harington",
+            "Peter Dinklage"
+
           ],
-          year: 2020,
-          genre: ["Crime", "Thriller", "Television"],
+          year: 2019,
+          genre: ["Action", "Adventure", "Drama"],
           createdAt: new Date(),
           updatedAt: new Date(),
-          mediumId: 1,
+          mediumId: 5,
+          eau: 5051888246634,
         },
         {
           title: "MATRIX REVOLUTIONS",
@@ -112,10 +121,11 @@ module.exports = {
             "Gloria Foster",
           ],
           year: 2003,
-          genre: [ "Action", "Sci-Fi"],
+          genre: ["Action", "Sci-Fi"],
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 2,
+          eau: 7321931332095,
         },
         {
           title: "ROCKET MAN",
@@ -129,10 +139,11 @@ module.exports = {
             "Bryce Dallas Howard",
           ],
           year: 2019,
-          genre: ["Biography","Musical", "Drama"],
+          genre: ["Biography", "Musical", "Drama"],
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 4,
+          eau: 5053083195069,
         },
         {
           title: "AVENGERS: INFINITY WAR",
@@ -153,6 +164,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 3,
+          eau: 222
         },
         {
           title: "HIDDEN FIGURES",
@@ -170,7 +182,8 @@ module.exports = {
           genre: ["Biography", "History", "Drama"],
           createdAt: new Date(),
           updatedAt: new Date(),
-          mediumId: 3,
+          mediumId: 5,
+          eau: 8712626049210 
         },
         {
           title: "TWO POPES",
@@ -189,7 +202,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 1,
-
+          eau: 222
         },
       ],
       {}

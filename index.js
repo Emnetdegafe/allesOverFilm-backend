@@ -5,6 +5,8 @@ const express = require("express");
 const { PORT } = require("./constants");
 const bodyParserMiddleWare = express.json();
 const pricesRouter= require("./routers/prices")
+const reviewsRouter = require("./routers/reviews")
+
 
 const app = express();
 app.use(bodyParserMiddleWare);
@@ -12,8 +14,9 @@ app.use(bodyParserMiddleWare);
 
 
 
-app.use("/films", pricesRouter)
-// console.log('prices', pricesRouter)
+app.use("/", pricesRouter)
+
+app.use("/", reviewsRouter)
 
 app.get("/", (req, res) => {
   res.send("Hi from express");
