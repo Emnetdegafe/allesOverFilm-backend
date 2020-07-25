@@ -27,7 +27,7 @@ router.get("/reviews", async (req, res) => {
     if (reviews === null) {
       return res.status(404).send({ message: "Review was not found" });
     } else {
-      res.status(200).json({ message: "ok", reviews });
+      res.status(200).send({ message: "ok", reviews });
     }
   } catch (e) {
     console.log(e);

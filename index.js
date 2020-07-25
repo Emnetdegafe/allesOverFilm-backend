@@ -11,7 +11,8 @@ const reviewsRouter = require("./routers/reviews")
 const app = express();
 app.use(bodyParserMiddleWare);
 
-
+const corsMiddleWare = require("cors");
+app.use(corsMiddleWare());
 
 
 app.use("/", pricesRouter)
