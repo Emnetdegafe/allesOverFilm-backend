@@ -2,8 +2,7 @@ const axios = require("axios");
 const { JSDOM } = require("jsdom");
 const { Router } = require("express");
 const Films = require("../models").film;
-const Reviews = require("../models").review
-
+const Reviews = require("../models").review;
 
 const router = new Router();
 
@@ -23,16 +22,31 @@ router.get("/films/price/:eau", async (req, res) => {
       } else {
         const dom = new JSDOM(result.data);
         const dom1 = new JSDOM(response.data);
-        const eurosAmz = dom.window.document.getElementsByClassName(
+        const AmzPrice = dom.window.document.getElementsByClassName(
           "a-price-whole"
         )[0].textContent;
+        const AmzPic = dom.window.document
+          .getElementsByClassName("s-image")[0]
+          .getAttribute("src");
+        const AmzTitle = dom.window.document
+          .getElementsByClassName("s-image")[0]
+          .getAttribute("alt");
         const eurosBol = dom1.window.document.getElementsByClassName(
           "promo-price"
         )[0].textContent;
-        const bolPrice = eurosBol.replace(/\s/g, "");
-        console.log(eurosAmz, bolPrice);
+        const BolPic = dom1.window.document
+          .getElementsByClassName("h-o-hidden")[0]
+          .getElementsByTagName("img")[0]
+          .getAttribute("src");
+        const BolTitle = dom1.window.document
+          .getElementsByClassName("h-o-hidden")[0]
+          .getElementsByTagName("img")[0]
+          .getAttribute("alt");
+        console.log("pic", AmzPic);
+        const BolPrice = eurosBol.replace(/\s/g, "");
+        console.log(AmzPrice, BolPrice);
         // console.log(`${euros}, ${cents}`)
-        res.status(200).send({ eurosAmz, bolPrice });
+        res.status(200).send({ AmzPrice, AmzPic, AmzTitle, BolPrice, BolPic, BolTitle });
       }
     } catch (e) {
       console.log("err", e);
@@ -40,26 +54,25 @@ router.get("/films/price/:eau", async (req, res) => {
   }
   getHtml();
 });
-router.get("/films", async(req, res) => {
-  try{
+router.get("/films", async (req, res) => {
+  try {
     const films = await Films.findAll({
-      include: [Reviews]
-    })
-res.status(200).send({message: "ok", films})
-  }catch(e) {
-    console.log(e)
+      include: [Reviews],
+    });
+    res.status(200).send({ message: "ok", films });
+  } catch (e) {
+    console.log(e);
   }
 }),
-router.get("/films/:id", async(req, res) => {
-  const id = req.params.id
-  try{
-    const film = await Films.findByPk(id, {
-      include: [Reviews]
-    })
-    if(film)
-res.status(200).send({message: "ok", film})
-  }catch(e) {
-    console.log(e)
-  }
-})
+  router.get("/films/:id", async (req, res) => {
+    const id = req.params.id;
+    try {
+      const film = await Films.findByPk(id, {
+        include: [Reviews],
+      });
+      if (film) res.status(200).send({ message: "ok", film });
+    } catch (e) {
+      console.log(e);
+    }
+  });
 module.exports = router;
