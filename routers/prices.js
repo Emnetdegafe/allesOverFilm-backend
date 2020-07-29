@@ -46,7 +46,9 @@ router.get("/films/price/:eau", async (req, res) => {
         const BolPrice = eurosBol.replace(/\s/g, "");
         console.log(AmzPrice, BolPrice);
         // console.log(`${euros}, ${cents}`)
-        res.status(200).send({ AmzPrice, AmzPic, AmzTitle, BolPrice, BolPic, BolTitle });
+        res
+          .status(200)
+          .send({ AmzPrice, AmzPic, AmzTitle, BolPrice, BolPic, BolTitle });
       }
     } catch (e) {
       console.log("err", e);
