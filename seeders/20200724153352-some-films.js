@@ -88,7 +88,7 @@ module.exports = {
         {
           title: "GAME OF THRONES - SEIZOEN 8",
           image:
-            "https://allesoverfilm.nl/media/temp/files/2020-04-27-00-03/136/Freud_netflix_poster.jpg",
+            "https://allesoverfilm.nl/media/temp/files/2019-12-12-22-41/136/game_of_thrones_s8_blu-ray_cover.jpg",
           director: "Different directors",
           actors: [
             "Carice van Houten",
