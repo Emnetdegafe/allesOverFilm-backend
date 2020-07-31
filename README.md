@@ -13,3 +13,4 @@ A few pointers
 - Fetch prices - `http://localhost:4000/films/price/${eau}`
 - Fetch a list of reviews - `http://localhost:4000/films`
 - Fetch review detail - `http://localhost:4000/films/${id}`
+
