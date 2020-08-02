@@ -7,7 +7,7 @@ A few pointers
 
 - index.js is the server script
 - 2 router files price.js and review.js 
-- DB has 10 sample data/reviews extracted from the website and itś displayed on the homeScreen
+- Data Base has 10 sample data/reviews extracted from the website and itś displayed on the homeScreen
 - DATABASE_URL is in the .env file
     # endpoints
 - Fetch prices - `http://localhost:4000/films/price/${eau}`
