@@ -1,6 +1,6 @@
 # allesOverFilm-backend
 
-This is a backend for [AllesOVerFilm-client](https://github.com/Emnetdegafe/allesOverFilm-client)
+This is a backend for [AllesOVerFilm-client](https://github.com/Emnetdegafe/allesOverFilm-client).
 It contains postgress DB, query scrips, some seed data and others. 
 
 # A few pointers
