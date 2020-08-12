@@ -19,7 +19,9 @@ module.exports = (sequelize, DataTypes) => {
     image: {type: DataTypes.STRING, allowNull: false},
     director: DataTypes.STRING,
     actors: DataTypes.STRING,
-    year: {type: DataTypes.STRING, allowNull: false}
+    year: {type: DataTypes.STRING, allowNull: false},
+    reviewCode: DataTypes.INTEGER
+  
   }, {
     sequelize,
     modelName: 'film',

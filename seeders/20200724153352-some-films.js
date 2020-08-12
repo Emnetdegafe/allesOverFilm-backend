@@ -23,6 +23,7 @@ module.exports = {
           updatedAt: new Date(),
           mediumId: 5,
           eau: 8713045250492,
+          reviewCode: 6133,
         },
         {
           title: "FAST & FURIOUS 6",
@@ -45,6 +46,7 @@ module.exports = {
           updatedAt: new Date(),
           mediumId: 4,
           eau: 5053083106911,
+          reviewCode: 6107,
         },
         {
           title: "HUNTERS",
@@ -63,7 +65,8 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 1,
-          eau: 222
+          eau: 222,
+          reviewCode: 6123,
         },
         {
           title: "Joker",
@@ -83,7 +86,8 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 4,
-          eau: 5051888249970
+          eau: 5051888249970,
+          reviewCode: 6080,
         },
         {
           title: "GAME OF THRONES - SEIZOEN 8",
@@ -98,8 +102,7 @@ module.exports = {
             "Jacob Anderson",
             "John Bradley",
             "Kit Harington",
-            "Peter Dinklage"
-
+            "Peter Dinklage",
           ],
           year: 2019,
           genre: ["Action", "Adventure", "Drama"],
@@ -107,6 +110,7 @@ module.exports = {
           updatedAt: new Date(),
           mediumId: 5,
           eau: 5051888246634,
+          reviewCode: 6045,
         },
         {
           title: "MATRIX REVOLUTIONS",
@@ -126,6 +130,7 @@ module.exports = {
           updatedAt: new Date(),
           mediumId: 2,
           eau: 7321931332095,
+          reviewCode: 6094,
         },
         {
           title: "ROCKET MAN",
@@ -144,6 +149,7 @@ module.exports = {
           updatedAt: new Date(),
           mediumId: 4,
           eau: 5053083195069,
+          reviewCode: 6028,
         },
         {
           title: "AVENGERS: INFINITY WAR",
@@ -164,7 +170,8 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 3,
-          eau: 222
+          eau: 222,
+          reviewCode: 5835,
         },
         {
           title: "HIDDEN FIGURES",
@@ -183,7 +190,8 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 5,
-          eau: 8712626049210 
+          eau: 8712626049210,
+          reviewCode: 5677,
         },
         {
           title: "TWO POPES",
@@ -202,7 +210,8 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 1,
-          eau: 222
+          eau: 222,
+          reviewCode: 6051,
         },
       ],
       {}
