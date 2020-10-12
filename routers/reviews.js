@@ -6,7 +6,7 @@ const Films = require("../models").film;
 const router = new Router();
 router.get("/reviews/:id", async (req, res) => {
   const id = req.params.id;
-  console.log("eau", id);
+  console.log("ean", id);
   try {
     const review = await Reviews.findByPk(id, {
         include: {models: Films}
@@ -21,7 +21,7 @@ router.get("/reviews/:id", async (req, res) => {
   }
 });
 router.get("/reviews", async (req, res) => {
-  //   const eau = parseInt(req.params.eau);
+  //   const ean = parseInt(req.params.ean);
   try {
     const reviews = await Reviews.findAll();
     if (reviews === null) {

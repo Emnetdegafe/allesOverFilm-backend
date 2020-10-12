@@ -6,16 +6,16 @@ const Reviews = require("../models").review;
 
 const router = new Router();
 
-router.get("/films/price/:eau", async (req, res, next) => {
+router.get("/films/price/:ean", async (req, res, next) => {
   async function getHtml() {
     try {
-      const eau = parseInt(req.params.eau);
-      console.log("eau", eau);
+      const ean = parseInt(req.params.ean);
+      console.log("ean", ean);
       const result = await axios.get(
-        `https://www.amazon.nl/s?k=${eau}&__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss`
+        `https://www.amazon.nl/s?k=${ean}&__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss`
       );
       const response = await axios.get(
-        `https://www.bol.com/nl/s/?searchtext=${eau}&searchContext=media_all&appliedSearchContextId=&suggestFragment=&adjustedSection=&originalSection=&originalSearchContext=&section=main&N=0&defaultSearchContext=media_all`
+        `https://www.bol.com/nl/s/?searchtext=${ean}&searchContext=media_all&appliedSearchContextId=&suggestFragment=&adjustedSection=&originalSection=&originalSearchContext=&section=main&N=0&defaultSearchContext=media_all`
       );
       // console.log("result", result)
       if (!result && !response) {

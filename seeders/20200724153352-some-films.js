@@ -22,7 +22,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 5,
-          eau: 8713045250492,
+          ean: 8713045250492,
           reviewCode: 6133,
         },
         {
@@ -45,7 +45,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 4,
-          eau: 5053083106911,
+          ean: 5053083106911,
           reviewCode: 6107,
         },
         {
@@ -65,7 +65,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 1,
-          eau: 222,
+          ean: 222,
           reviewCode: 6123,
         },
         {
@@ -86,7 +86,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 4,
-          eau: 5051888249970,
+          ean: 5051888249970,
           reviewCode: 6080,
         },
         {
@@ -109,7 +109,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 5,
-          eau: 5051888246634,
+          ean: 5051888246634,
           reviewCode: 6045,
         },
         {
@@ -129,7 +129,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 2,
-          eau: 7321931332095,
+          ean: 7321931332095,
           reviewCode: 6094,
         },
         {
@@ -148,7 +148,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 4,
-          eau: 5053083195069,
+          ean: 5053083195069,
           reviewCode: 6028,
         },
         {
@@ -170,7 +170,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 3,
-          eau: 222,
+          ean: 222,
           reviewCode: 5835,
         },
         {
@@ -190,7 +190,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 5,
-          eau: 8712626049210,
+          ean: 8712626049210,
           reviewCode: 5677,
         },
         {
@@ -210,7 +210,7 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
           mediumId: 1,
-          eau: 222,
+          ean: 222,
           reviewCode: 6051,
         },
       ],
